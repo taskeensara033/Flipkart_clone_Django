@@ -49,7 +49,7 @@ def search_view(request):
         else Product.objects.none()
     )
     return render(
-        request,
+        request, 
         "shop/search.html",
         {"categories": categories, "products": products, "query": q},
     )
